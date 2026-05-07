@@ -49,6 +49,12 @@ if [[ ! -f .env ]]; then
   exit 1
 fi
 
+# Verifica porta antes de alterar o .env
+if ss -ltnp 2>/dev/null | grep -qE ":${PORT}(\\s|$)"; then
+  echo "[error] a porta ${PORT} já está em uso. Use --port para alterar ou finalize o processo existente." >&2
+  exit 1
+fi
+
 cp .env .env.bak.dev-local
 
 cleanup() {
