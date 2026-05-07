@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 test('clinic landing renders core content and contact flow', async ({ page }) => {
   await page.goto('./');
 
-  await expect(page.getByRole('heading', { name: /Atendimento psicológico/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Atendimento psicológico\s+calmo/i })).toBeVisible();
   await expect(page.getByRole('heading', { name: /Serviços de psicologia/i })).toBeVisible();
   await expect(page.getByRole('heading', { name: /Solicite seu agendamento em psicologia/i })).toBeVisible();
 
