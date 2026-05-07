@@ -1,17 +1,20 @@
-# Landing Médica
+# Landing Médica (Psicologia, Pediatria, Odontologia)
+Uma landing page é uma página criada com o objetivo de levar o visitante a realizar uma ação específica, como comprar um produto, solicitar um orçamento, preencher um formulário, entrar em contato ou se cadastrar em algum serviço. Diferente de um site tradicional, que normalmente possui várias páginas e diferentes caminhos de navegação, a landing page é mais simples, direta e focada na conversão do usuário. Sua principal finalidade é transformar visitantes em clientes ou potenciais clientes, sendo muito utilizada em campanhas de marketing digital, anúncios em redes sociais e divulgação de produtos ou serviços.
 
-Protótipo de landing page para serviços de saúde, pronto para derivar projetos como `/medico`, `/pediatria`, `/veterinaria`, `/odontologia` e outros subdiretórios.
+## Produto
 
-## Para quem vai adquirir o nicho Psicologia
+Protótipo de landing page para serviços de saúde, pronto para derivar projetos como `/medico`, `/pediatria`, `/odontologia` e outros subdiretórios.
+
+## Para quem tem interesse em adquirir o nicho Psicologia
 
 Esta é uma apresentação simples para quem quer colocar no ar uma página de captação específica para Psicologia.
 
 - O que é uma landing page: é uma página focada em um único objetivo — neste caso, captar contatos qualificados de pacientes interessados em atendimento psicológico. Tudo é pensado para clareza, confiança e ação (agendar ou falar no WhatsApp).
-- O que você recebe: um site de nicho “Pronto para Vender” de Psicologia, com textos, imagens e seções já organizadas para o seu consultório, funcionando em servidores comuns de hospedagem compartilhada e preparado para crescer junto com o negócio.
+- O que você recebe: um site de nicho “Pronto para Converter” de Psicologia, com textos, imagens e seções já organizadas para sua clínica/Consultório, funcionando em servidores comuns de hospedagem compartilhada e preparado para crescer junto com o negócio.
 
 ### Como a landing de Psicologia está montada
 
-- Não é um único arquivo estático: apesar do nome “landing page”, aqui usamos uma aplicação com organização profissional (MVC e roteamento) para facilitar manutenções e crescimento.
+- Não é um único arquivo estático: apesar do nome “landing page”, aqui usamos uma aplicação com organização profissional (MVC e roteamento) para facilitar manutenção e crescimento.
 - Conteúdo do nicho: `config/content/psicologia.php` concentra os textos, chamadas e rótulos usados na página.
 - Templates: o layout é montado em partes com Twig (por exemplo `views/pages/home.twig`, `views/partials/navbar.twig` e `views/partials/footer.twig`).
 - Rotas: a navegação é simples e direta — a página principal e o envio do formulário ficam em `routes/web.php`.
