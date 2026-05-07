@@ -142,7 +142,17 @@ return [
     // Seção de Localização (opcional): ajuste o endereço e o link/embed conforme a clínica
     'location' => [
         'title' => 'Localização',
-        'address' => 'Natal, RN — Atendimento psicológico com hora marcada',
+        'eyebrow' => 'Natal, RN',
+        'address' => 'Atendimento psicológico com hora marcada',
+        'description' => 'Consultório com agenda organizada para receber cada pessoa com privacidade, pontualidade e orientação clara antes do primeiro encontro.',
+        'details' => [
+            ['icon' => 'geo-alt', 'label' => 'Natal, Rio Grande do Norte'],
+            ['icon' => 'calendar2-check', 'label' => 'Atendimentos realizados mediante agendamento prévio'],
+            ['icon' => 'shield-lock', 'label' => 'Ambiente reservado para conversas sensíveis'],
+        ],
+        'note' => 'Após o contato, a equipe confirma disponibilidade de horário e envia as orientações de chegada.',
+        'primary_label' => 'Solicitar agendamento',
+        'secondary_label' => 'Abrir rota',
         // URL de embed do Google Maps usando center+q para fixar a coordenada exata no centro e manter o marcador
         'map_embed_url' => 'https://maps.google.com/maps?center=-5.861295633849962,-35.2124969876455&q=-5.861295633849962,-35.2124969876455&z=16&output=embed',
         'map_link' => 'https://www.google.com/maps/search/?api=1&query=-5.861295633849962,-35.2124969876455&zoom=16',
