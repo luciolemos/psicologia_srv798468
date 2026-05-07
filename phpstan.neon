@@ -9,4 +9,4 @@ parameters:
         - tests
     excludePaths:
         - vendor
-        - node_modules
+        - node_modules (?)
