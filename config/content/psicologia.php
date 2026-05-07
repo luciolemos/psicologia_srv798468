@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 return [
     'seo' => [
-        'title' => 'Clínica de Psicologia | Atendimento psicológico com escuta qualificada',
+        'title' => 'Clínica de Psicologia EMOTION | Atendimento psicológico com escuta qualificada',
         'description' => 'Psicologia com escuta acolhedora, atendimento individual e acompanhamento com privacidade, clareza e organização.',
-        'site_name' => 'Clínica de Psicologia',
+        'site_name' => 'Clínica de Psicologia EMOTION',
         'image' => [
             'src' => 'assets/img/social/psicologia-og.jpg',
             'width' => 1200,
@@ -16,7 +16,7 @@ return [
         'schema' => [
             'type' => 'MedicalBusiness',
             'logo' => 'assets/img/psicologia-mark.svg',
-            'area_served' => 'Natal e região',
+            'area_served' => 'Rio Grande do Norte',
             'include_services' => true,
             'include_faq' => true,
         ],
@@ -26,7 +26,7 @@ return [
         'cta' => 'Agendar',
     ],
     'typography' => [
-        'profile' => 'warm',
+        'profile' => 'clinical',
     ],
     'hero' => [
         'badge_icon' => 'journal-heart',
