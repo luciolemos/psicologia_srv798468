@@ -139,6 +139,15 @@ return [
             ['icon' => 'clipboard2-check', 'title' => 'Processo organizado', 'text' => 'Frequência, orientações iniciais e próximos passos alinhados com clareza e respeito.'],
         ],
     ],
+    // Seção de Localização (opcional): ajuste o endereço e o link/embed conforme a clínica
+    'location' => [
+        'title' => 'Localização',
+        'address' => 'Natal, RN — Atendimento psicológico com hora marcada',
+        // URL de embed do Google Maps usando ll+q para centralização exata e marcador preciso
+        'map_embed_url' => 'https://maps.google.com/maps?ll=-5.861295633849962,-35.2124969876455&q=-5.861295633849962,-35.2124969876455&z=16&output=embed',
+        'map_link' => 'https://www.google.com/maps?q=-5.861295633849962,-35.2124969876455&z=16',
+        'iframe_title' => 'Mapa: Clínica de Psicologia EMOTION (Natal, RN)',
+    ],
     'cta' => [
         'title' => 'Quer agendar seu primeiro atendimento psicológico?',
         'text' => 'Preencha com seus dados e a necessidade inicial. A equipe retorna para combinar horário, formato do primeiro atendimento e orientações básicas.',
