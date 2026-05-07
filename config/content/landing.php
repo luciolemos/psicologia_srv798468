@@ -18,7 +18,7 @@ return [
         ],
         'schema' => [
             'type' => 'MedicalBusiness',
-            'logo' => 'assets/img/clinic-mark.svg',
+            'logo' => 'assets/img/psicologia-mark.svg',
             'price_range' => '$$',
             'area_served' => 'Natal e região',
             'include_services' => true,
