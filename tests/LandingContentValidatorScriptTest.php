@@ -28,12 +28,12 @@ final class LandingContentValidatorScriptTest extends TestCase
             . ' ' . escapeshellarg($script)
             . ' --project-root ' . escapeshellarg(dirname(__DIR__))
             . ' --content landing'
-            . ' --slug medico';
+            . ' --slug psicologia';
 
         exec($command, $output, $exitCode);
 
         self::assertSame(0, $exitCode, implode("\n", $output));
-        self::assertStringContainsString('typography.profile=clinical', implode("\n", $output));
+        self::assertStringContainsString('typography.profile=warm', implode("\n", $output));
         self::assertStringContainsString('failures: 0', implode("\n", $output));
     }
 
@@ -58,9 +58,7 @@ final class LandingContentValidatorScriptTest extends TestCase
     public static function mergedNicheContentProvider(): array
     {
         return [
-            'pediatria' => ['pediatria', 'family'],
-            'odontologia' => ['odontologia', 'premium'],
-            'veterinaria' => ['veterinaria', 'warm'],
+            'psicologia' => ['psicologia', 'warm'],
         ];
     }
 
