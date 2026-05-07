@@ -272,6 +272,41 @@
   </div>
 </section>
 
+{# Localização: seção com banner do Google Maps (iframe) #}
+{% set location = content.location|default({}) %}
+{% if location.map_embed_url|default('') %}
+<section id="localizacao" class="py-5 py-lg-6 section-tech">
+  <div class="container">
+    <div class="text-center mb-4 mb-lg-5 section-heading">
+      <h2 class="fw-bold">{{ location.title|default('Localização') }}</h2>
+      {% if location.address|default('') %}
+      <p class="text-secondary-emphasis mb-0">{{ location.address }}</p>
+      {% endif %}
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-12 col-lg-10">
+        <div class="glass p-1 ratio ratio-16x9">
+          <iframe
+            src="{{ location.map_embed_url }}"
+            title="{{ location.iframe_title|default('Mapa de localização') }}"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            style="border:0; width:100%; height:100%;"
+            allowfullscreen
+          ></iframe>
+        </div>
+        {% if location.map_link|default('') %}
+        <div class="text-end mt-2">
+          <a class="small link-light" href="{{ location.map_link }}" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  </section>
+{% endif %}
+
 <section id="cta" class="py-5 py-lg-6 section-tech">
   <div class="container">
     <div class="text-center mb-4 mb-lg-5 section-heading">
