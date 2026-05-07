@@ -58,7 +58,7 @@ final class LandingContentValidatorScriptTest extends TestCase
     public static function mergedNicheContentProvider(): array
     {
         return [
-            'psicologia' => ['psicologia', 'warm'],
+            'psicologia' => ['psicologia', 'clinical'],
         ];
     }
 

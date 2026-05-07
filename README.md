@@ -2,6 +2,106 @@
 
 Protótipo de landing page para serviços de saúde, pronto para derivar projetos como `/medico`, `/pediatria`, `/veterinaria`, `/odontologia` e outros subdiretórios.
 
+## Para quem vai adquirir o nicho Psicologia
+
+Esta é uma apresentação simples para quem quer colocar no ar uma página de captação específica para Psicologia.
+
+- O que é uma landing page: é uma página focada em um único objetivo — neste caso, captar contatos qualificados de pacientes interessados em atendimento psicológico. Tudo é pensado para clareza, confiança e ação (agendar ou falar no WhatsApp).
+- O que você recebe: um site de nicho “Pronto para Vender” de Psicologia, com textos, imagens e seções já organizadas para o seu consultório, funcionando em servidores comuns de hospedagem compartilhada e preparado para crescer junto com o negócio.
+
+### Como a landing de Psicologia está montada
+
+- Não é um único arquivo estático: apesar do nome “landing page”, aqui usamos uma aplicação com organização profissional (MVC e roteamento) para facilitar manutenções e crescimento.
+- Conteúdo do nicho: `config/content/psicologia.php` concentra os textos, chamadas e rótulos usados na página.
+- Templates: o layout é montado em partes com Twig (por exemplo `views/pages/home.twig`, `views/partials/navbar.twig` e `views/partials/footer.twig`).
+- Rotas: a navegação é simples e direta — a página principal e o envio do formulário ficam em `routes/web.php`.
+- Controlador: a lógica de exibição e do formulário está em `src/Controllers/HomeController.php`.
+- Imagens: ficam em `public/assets/img/` com versões otimizadas para celular e desktop.
+
+### Objetivo de cada seção (explicado de forma didática)
+
+- Hero (cabeçalho com destaque): apresenta sua proposta de valor de forma clara, com botões de ação (“Agendar consulta” e “Ver atendimentos”) e selos de confiança.
+- Para quem é (momentos/situações): lista rápida de situações comuns em que o atendimento psicológico ajuda, conectando com a necessidade do paciente.
+- Serviços: mostra as frentes de atendimento (ex.: terapia individual, de casal, avaliação, acompanhamento), com ícones e textos curtos.
+- Como funciona: explica o passo a passo do agendamento e do primeiro contato, reduzindo dúvidas e inseguranças.
+- Estrutura/diferenciais: reforça pontos fortes do consultório (acolhimento, organização, retorno, privacidade), ajudando na decisão.
+- Chamada final (CTA): convida o visitante a solicitar o agendamento ou falar no WhatsApp, com pontos de apoio (ex.: horário, confirmação, canais de retorno).
+- Formulário de agendamento: formulário em 2 etapas para captar nome, telefone/WhatsApp, e-mail e motivo da consulta, com mensagem de confirmação.
+- Dúvidas frequentes (FAQ): antecipa respostas sobre convênios, horários, primeira consulta, retorno, políticas etc.
+- Rodapé e contato: links úteis, identidade e política de privacidade; atalho fixo para WhatsApp.
+
+### Vantagens do produto
+
+- Pronto para publicar: funciona em hospedagem compartilhada (PHP 8.3+), sem necessidade de servidores dedicados.
+- Rápido e otimizado: imagens WebP, pré-carregamento da imagem principal e CSS leve para tempo de carregamento curto.
+- SEO técnico preparado: títulos, descrições, Open Graph/Twitter Card e dados estruturados (JSON-LD) configuráveis para nichos.
+- Formulário seguro e com anti-spam: proteção CSRF, campo honeypot, reCAPTCHA v3 e limitador de tentativas por IP.
+- Entrega confiável de leads: envio de e-mail com fallback em arquivo local caso o SMTP não esteja configurado, além de registro operacional de eventos.
+- Visual personalizável: paletas de cores e tipografia por perfil, mantendo consistência e legibilidade.
+
+### Pronta para escalar com o seu negócio
+
+- Arquitetura em camadas (MVC + Twig + roteamento) facilita ajustes e evolução sem “quebrar” a página.
+- Configuração por ambiente (`.env`) e por nicho (`config/content/psicologia.php`) para criar variações com rapidez.
+- Estrutura modular: cabeçalho, seções, formulário e rodapé são componentes reaproveitáveis — ideal para crescer para outras especialidades.
+
+Se você só quer “entrar no ar”, basta configurar os dados básicos (nome da clínica, WhatsApp e e-mail de recebimento) e publicar. Quando seu consultório crescer, a mesma base suporta novos serviços, ajustes de conteúdo e integrações adicionais sem precisar refazer o site.
+
+### Checklist de personalização (Psicologia)
+
+1) Identidade e dados básicos
+- Ajuste as chaves no `.env` (use o arquivo de exemplo `.env.example`): `APP_NAME`, `APP_MARK`, `APP_PAGE_TITLE`, `APP_SLUG=psicologia`, `APP_CONTENT_FILE=psicologia`, `APP_BASE` (ex.: `/psicologia`), redes sociais (`FACEBOOK_URL`, `INSTAGRAM_URL`, `X_URL`), e WhatsApp (`APP_WHATSAPP_NUMBER`, `APP_WHATSAPP_MESSAGE`).
+- Configure `CONTACT_TO` com o e-mail que vai receber os leads e `CONTACT_FROM` com um remetente válido do seu domínio.
+
+2) Conteúdo do nicho
+- Atualize títulos e textos em `config/content/psicologia.php` (SEO, chamadas, serviços, FAQ e mensagens do formulário).
+
+3) Imagens
+- Substitua os arquivos em `public/assets/img/hero/`:
+	- `psicologia-640.webp`, `psicologia-960.webp`, `psicologia-1896.webp`, `psicologia-mobile-640.webp`.
+- Atualize a imagem social em `public/assets/img/social/psicologia-og.jpg`.
+- Se desejar, troque o logotipo/ícone em `public/assets/img/psicologia-mark.svg`.
+
+4) Revisão final
+- Rode os testes e checagens locais: `composer test`, `bash scripts/run-tests.sh`, e `php scripts/validate-landing-content.php --content psicologia --slug psicologia`.
+
+### Guia de publicação (hospedagem compartilhada)
+
+Pré-requisitos: PHP 8.3+ habilitado no painel e acesso ao gerenciador de arquivos/FTP. Idealmente, a pasta pública do site (ex.: `public_html/`) deve apontar para o diretório `public/` deste projeto.
+
+Passo a passo (rota recomendada: subdiretório `/psicologia`):
+1) Envio de arquivos
+- Faça upload de todo o projeto para uma pasta fora da raiz pública (ex.: `~/apps/psicologia`).
+- Aponte o subdomínio/caminho público para `~/apps/psicologia/public` (se o painel permitir escolher o Document Root).
+- Alternativa quando não é possível mudar o Document Root: crie um subdiretório público (ex.: `public_html/psicologia`) e copie apenas o conteúdo de `public/` para lá. Nesse caso, mantenha `APP_BASE=/psicologia` e garanta que `index.php` consiga resolver os caminhos relativos (já está preparado para isso).
+
+2) Configuração do ambiente
+- Copie `.env.example` para `.env` e ajuste: `APP_NAME`, `APP_BASE`, `APP_CANONICAL_URL` (URL pública final), `CONTACT_TO`, `MAIL_DRIVER` e variáveis `SMTP_*` do seu provedor de e-mail.
+- Em produção real, habilite reCAPTCHA v3: `RECAPTCHA_ENABLED=true` e preencha `RECAPTCHA_SITE_KEY` e `RECAPTCHA_SECRET_KEY` do seu domínio.
+
+3) Permissões e cache
+- Após publicar ou atualizar templates, execute a limpeza do cache do Twig. Se tiver acesso SSH:
+
+```bash
+bash scripts/deploy-post-update.sh --project-root "$PWD" --skip-chown
+```
+
+- Sem SSH, exclua manualmente os arquivos de `storage/cache/twig/` mantendo o `.gitkeep`.
+
+4) Verificação rápida (opcional)
+- Rode os smoke tests no ambiente publicado se SSH estiver disponível:
+
+```bash
+bash scripts/smoke-frontend.sh --url "https://seudominio.com.br/psicologia/"
+bash scripts/smoke-contact.sh  --url "https://seudominio.com.br/psicologia/"
+```
+
+5) Checklist final
+- Página abre rápido no celular, imagens carregam em WebP.
+- Formulário envia e chega no e-mail configurado em `CONTACT_TO`.
+- WhatsApp abre com a mensagem inicial correta.
+- Meta tags (título/descrição/imagem) aparecem ao compartilhar o link.
+
 ## Requisitos
 
 - PHP 8.3 ou 8.4
