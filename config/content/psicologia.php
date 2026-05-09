@@ -34,7 +34,7 @@ return [
         'title_parts' => [
             'Atendimento psicológico',
             'calmo e presente',
-            'para cuidar da sua saúde emocional com mais clareza e fôlego.',
+            'para cuidar da sua saúde emocional e mental com mais clareza e fôlego.',
         ],
         'lead' => 'Atendimento psicológico individual com escuta qualificada, organização do cuidado e uma presença clínica acolhedora para atravessar ansiedade, sobrecarga, conflitos e processos de mudança com mais estabilidade.',
         'primary_cta' => [
