@@ -1,10 +1,11 @@
 {% set nav_content = landing_content.nav|default({}) %}
+{% set app_logo = landing_content.seo.schema.logo|default('assets/img/clinic-mark.svg') %}
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 nav-glass">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center gap-2" href="{{ base_url ?? '/' }}">
       <img
-        src="{{ base_url ?? '' }}/assets/img/clinic-mark.svg"
+        src="{{ base_url ?? '' }}/{{ app_logo }}"
         alt="{{ app_name ?? 'Landing de saúde' }}"
         class="navbar-logo"
         width="38"
@@ -44,8 +45,9 @@
         <li class="nav-item nav-priority-1"><a class="nav-link" href="#features">Serviços</a></li>
         <li class="nav-item nav-priority-2"><a class="nav-link" href="#how">Atendimento</a></li>
         <li class="nav-item nav-priority-3"><a class="nav-link" href="#estrutura">Estrutura</a></li>
-        <li class="nav-item nav-priority-2"><a class="nav-link" href="#form-orcamento">Agendar</a></li>
-        <li class="nav-item nav-priority-2"><a class="nav-link" href="#faq">Dúvidas</a></li>
+        <li class="nav-item nav-priority-3"><a class="nav-link" href="#localizacao">Localização</a></li>
+        <li class="nav-item nav-priority-2"><a class="nav-link" href="#cta">Agendar</a></li>
+        <li class="nav-item nav-priority-2"><a class="nav-link" href="#faq">Faq</a></li>
         </ul>
 
         <div class="nav-actions d-flex align-items-stretch align-items-lg-center gap-2 mt-3 mt-lg-0 ms-lg-3">
@@ -73,9 +75,6 @@
           </div>
           {% endif %}
 
-          <a class="btn btn-sm btn-primary nav-action-btn cta-track" href="#form-orcamento" data-cta-id="nav_schedule">
-            {{ nav_content.cta|default('Agendar') }}
-          </a>
           <button class="btn btn-sm btn-outline-light nav-quick-btn d-none d-lg-inline-flex" id="themeToggle" type="button" aria-label="Alternar tema" title="Alternar tema">
             <i class="bi bi-moon-stars"></i>
           </button>

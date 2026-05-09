@@ -18,7 +18,7 @@ return [
         ],
         'schema' => [
             'type' => 'MedicalBusiness',
-            'logo' => 'assets/img/clinic-mark.svg',
+            'logo' => 'assets/img/psicologia-mark.svg',
             'price_range' => '$$',
             'area_served' => 'Natal e região',
             'include_services' => true,
@@ -43,7 +43,7 @@ return [
         'lead' => 'Consultas clínicas, check-ups preventivos e acompanhamento contínuo com escuta atenta, agenda organizada e orientação clara para o próximo passo do cuidado.',
         'primary_cta' => [
             'label' => 'Agendar consulta',
-            'href' => '#form-orcamento',
+            'href' => '#cta',
             'icon' => 'arrow-right-short',
         ],
         'secondary_cta' => [
@@ -155,6 +155,23 @@ return [
             ['icon' => 'clipboard2-check', 'title' => 'Plano de cuidado', 'text' => 'Registro das orientações, pedidos de exame e próximos passos para acompanhamento.'],
         ],
     ],
+    'location' => [
+        'title' => 'Localização',
+        'eyebrow' => 'Natal, RN',
+        'address' => 'Atendimento com hora marcada',
+        'description' => 'Clínica com agenda organizada para receber cada pessoa com privacidade, pontualidade e orientação clara antes do primeiro atendimento.',
+        'details' => [
+            ['icon' => 'geo-alt', 'label' => 'Natal, Rio Grande do Norte'],
+            ['icon' => 'calendar2-check', 'label' => 'Atendimentos realizados mediante agendamento prévio'],
+            ['icon' => 'shield-lock', 'label' => 'Ambiente reservado para conversas sensíveis'],
+        ],
+        'note' => 'Após o contato, a equipe confirma disponibilidade de horário e envia as orientações de chegada.',
+        'primary_label' => 'Solicitar agendamento',
+        'secondary_label' => 'Abrir rota',
+        'map_embed_url' => 'https://maps.google.com/maps?center=-5.861295633849962,-35.2124969876455&q=-5.861295633849962,-35.2124969876455&z=16&output=embed',
+        'map_link' => 'https://www.google.com/maps/search/?api=1&query=-5.861295633849962,-35.2124969876455&zoom=16',
+        'iframe_title' => 'Mapa de localização da clínica em Natal, RN',
+    ],
     'cta' => [
         'title' => 'Precisa marcar uma consulta?',
         'text' => 'Envie seus dados e a equipe retorna para confirmar o melhor horário disponível.',
@@ -220,7 +237,7 @@ return [
         'address' => 'Atendimento presencial com horário agendado',
         'meta' => 'Consultas, check-ups e acompanhamento clínico',
         'emergency_note' => 'Atendimento eletivo. Em caso de urgência ou emergência, procure o pronto atendimento mais próximo.',
-        'credit' => 'Desenvolvido por NatalCode - Soluções Digitais',
+        'credit' => 'Desenvolvido por <a href="https://natalcode.com.br/" target="_blank" rel="noopener noreferrer">NatalCode</a> - Soluções Digitais',
     ],
     'floating_whatsapp' => [
         'label' => 'WhatsApp',

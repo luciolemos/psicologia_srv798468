@@ -160,7 +160,7 @@ final class HomeRoutesTest extends TestCase
         self::assertStringContainsString('data-typography="warm"', $html);
         self::assertStringContainsString('Cuidado médico', $html);
         self::assertStringContainsString('Serviços da clínica', $html);
-        self::assertStringContainsString('Desenvolvido por NatalCode - Soluções Digitais', $html);
+        self::assertStringContainsString('Desenvolvido por <a href="https://natalcode.com.br/" target="_blank" rel="noopener noreferrer">NatalCode</a> - Soluções Digitais', $html);
         self::assertStringNotContainsString('id="copyModeToggle"', $html);
         self::assertStringNotContainsString('id="paletteFabToggle"', $html);
         self::assertStringNotContainsString('data-palette-btn="red"', $html);
@@ -317,6 +317,7 @@ final class HomeRoutesTest extends TestCase
         self::assertStringContainsString('id="features"', $html);
         self::assertStringContainsString('id="how"', $html);
         self::assertStringContainsString('id="estrutura"', $html);
+        self::assertStringContainsString('id="localizacao"', $html);
         self::assertStringContainsString('id="cta"', $html);
         self::assertStringContainsString('id="form-orcamento"', $html);
         self::assertStringContainsString('id="faq"', $html);

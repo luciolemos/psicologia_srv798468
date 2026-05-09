@@ -51,8 +51,8 @@ return [
     'psicologia' => [
         'name' => 'Clínica de Psicologia',
         'mark' => 'P',
-        'palette' => 'amber',
-        'typography' => 'warm',
+        'palette' => 'blue',
+        'typography' => 'clinical',
         'schema_type' => 'MedicalBusiness',
         'request_prefix' => 'PSI',
         'tone' => 'Calmo, reservado, empático e claro.',

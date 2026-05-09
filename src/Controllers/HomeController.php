@@ -145,8 +145,11 @@ final class HomeController
         $requestId = $this->newRequestId();
 
         $recaptchaResult = $this->recaptchaVerifier->verify((string) ($post['recaptcha_token'] ?? ''), $clientIp);
-        if (!($recaptchaResult['ok'] ?? false)) {
-            $reason = 'reCAPTCHA falhou: ' . (string) ($recaptchaResult['error'] ?? 'erro desconhecido');
+        if ($recaptchaResult['ok'] !== true) {
+            $recaptchaError = isset($recaptchaResult['error'])
+                ? (string) $recaptchaResult['error']
+                : 'erro desconhecido';
+            $reason = 'reCAPTCHA falhou: ' . $recaptchaError;
             $this->leadLogger->persistEvent($eventId, $requestId, 'failure', $reason, $data, $clientIp, $userAgent);
             $this->setFormFlash([
                 'type'           => 'warning',
@@ -243,7 +246,7 @@ final class HomeController
 
     private function isBotSubmission(array $post): bool
     {
-        $honeypot = trim((string) ($post['website'] ?? ''));
+        $honeypot = trim((string) ($post[self::HONEYPOT_FIELD] ?? ''));
         return $honeypot !== '';
     }
 
@@ -399,4 +402,3 @@ final class HomeController
         return substr($slug !== '' ? $slug : 'LANDING', 0, 6);
     }
 }
-

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 return [
     'seo' => [
-        'title' => 'Clínica de Psicologia | Atendimento psicológico com escuta qualificada',
+        'title' => 'Clínica de Psicologia EMOTION | Atendimento psicológico com escuta qualificada',
         'description' => 'Psicologia com escuta acolhedora, atendimento individual e acompanhamento com privacidade, clareza e organização.',
-        'site_name' => 'Clínica de Psicologia',
+        'site_name' => 'Clínica de Psicologia EMOTION',
         'image' => [
             'src' => 'assets/img/social/psicologia-og.jpg',
             'width' => 1200,
@@ -15,7 +15,8 @@ return [
         ],
         'schema' => [
             'type' => 'MedicalBusiness',
-            'area_served' => 'Natal e região',
+            'logo' => 'assets/img/psicologia-mark.svg',
+            'area_served' => 'Rio Grande do Norte',
             'include_services' => true,
             'include_faq' => true,
         ],
@@ -25,7 +26,7 @@ return [
         'cta' => 'Agendar',
     ],
     'typography' => [
-        'profile' => 'warm',
+        'profile' => 'clinical',
     ],
     'hero' => [
         'badge_icon' => 'journal-heart',
@@ -38,7 +39,7 @@ return [
         'lead' => 'Atendimento psicológico individual com escuta qualificada, organização do cuidado e uma presença clínica acolhedora para atravessar ansiedade, sobrecarga, conflitos e processos de mudança com mais estabilidade.',
         'primary_cta' => [
             'label' => 'Marcar primeiro atendimento',
-            'href' => '#form-orcamento',
+            'href' => '#cta',
             'icon' => 'arrow-right-short',
         ],
         'secondary_cta' => [
@@ -137,6 +138,25 @@ return [
             ['icon' => 'shield-lock', 'title' => 'Privacidade emocional', 'text' => 'Dados de contato e informações compartilhadas tratados com cuidado e acesso restrito.'],
             ['icon' => 'clipboard2-check', 'title' => 'Processo organizado', 'text' => 'Frequência, orientações iniciais e próximos passos alinhados com clareza e respeito.'],
         ],
+    ],
+    // Seção de Localização (opcional): ajuste o endereço e o link/embed conforme a clínica
+    'location' => [
+        'title' => 'Localização',
+        'eyebrow' => 'Natal, RN',
+        'address' => 'Atendimento psicológico com hora marcada',
+        'description' => 'Consultório com agenda organizada para receber cada pessoa com privacidade, pontualidade e orientação clara antes do primeiro encontro.',
+        'details' => [
+            ['icon' => 'geo-alt', 'label' => 'Natal, Rio Grande do Norte'],
+            ['icon' => 'calendar2-check', 'label' => 'Atendimentos realizados mediante agendamento prévio'],
+            ['icon' => 'shield-lock', 'label' => 'Ambiente reservado para conversas sensíveis'],
+        ],
+        'note' => 'Após o contato, a equipe confirma disponibilidade de horário e envia as orientações de chegada.',
+        'primary_label' => 'Solicitar agendamento',
+        'secondary_label' => 'Abrir rota',
+        // URL de embed do Google Maps usando center+q para fixar a coordenada exata no centro e manter o marcador
+        'map_embed_url' => 'https://maps.google.com/maps?center=-5.861295633849962,-35.2124969876455&q=-5.861295633849962,-35.2124969876455&z=16&output=embed',
+        'map_link' => 'https://www.google.com/maps/search/?api=1&query=-5.861295633849962,-35.2124969876455&zoom=16',
+        'iframe_title' => 'Mapa: Clínica de Psicologia EMOTION (Natal, RN)',
     ],
     'cta' => [
         'title' => 'Quer agendar seu primeiro atendimento psicológico?',
