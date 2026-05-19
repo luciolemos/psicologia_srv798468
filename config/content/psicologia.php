@@ -57,8 +57,8 @@ return [
         'proof' => [
             'title' => 'Atendimento profissional com presença e continuidade',
             'lines' => [
-                'Conduzido por psicóloga com escuta qualificada, em um espaço seguro para elaborar emoções e experiências.',
-                'Processo organizado com acompanhamento contínuo, respeitando seu tempo e sua história.',
+                'Jersica Carvalho é uma profissional extremamente competente, sensível e acolhedora, dedicada ao cuidado e ao fortalecimento emocional de mulheres.',
+                'Em cada sessão, uma escuta atenta, um acompanhamento cuidadoso em um espaço realmente seguro e acolhedor.',
             ],
         ],
         'image' => [
@@ -237,9 +237,9 @@ return [
     'footer' => [
         'title' => 'Jersika Carvalho',
         'label' => 'Psicóloga • CRP 17/1671',
-        'address' => 'Instagram: @jersikacarvalho.psi • +55 71 8400-5128 • jersikacarvalho.psi@gmail.com',
+        'address' => '',
         'meta' => 'Atendimento psicológico para mulheres • Psicologia Corporal • Especialização em Família • Psicologia Analítica (em formação) • Terapeuta de Mulheres (em formação)',
-        'emergency_note' => 'Atendimento eletivo. Em caso de crise aguda, risco imediato ou urgência em saúde mental, procure atendimento emergencial presencial.',
+        'emergency_note' => 'Em caso de crise aguda, risco imediato ou urgência em saúde mental, procure atendimento emergencial presencial.',
     ],
     'floating_whatsapp' => [
         'label' => 'WhatsApp',
