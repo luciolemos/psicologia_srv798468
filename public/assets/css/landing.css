@@ -73,6 +73,17 @@ html[data-typography="warm"] {
   --button-weight: 700;
 }
 
+html[data-typography="feminine"] {
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --font-heading: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-ui: "Source Sans 3", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --heading-weight: 600;
+  --body-letter-spacing: 0.01em;
+  --heading-letter-spacing: 0.01em;
+  --button-letter-spacing: 0.02em;
+  --button-weight: 600;
+}
+
 html[data-niche="estetica"] {
   --font-body: "Aptos", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
   --font-heading: "Georgia", "Times New Roman", serif;
@@ -1899,7 +1910,7 @@ html[data-theme="light"] .nav-link {
 }
 
 html[data-theme="light"] .nav-link:hover,
-html[data-theme="light"] .navbar-brand .fw-semibold {
+html[data-theme="light"] .navbar-brand .brand-name {
   color: rgba(var(--light-accent-strong-rgb), 1) !important;
 }
 

@@ -28,15 +28,15 @@ return [
         'cta' => 'Agendar',
     ],
     'typography' => [
-        'profile' => 'clinical',
+        'profile' => 'feminine',
     ],
     'hero' => [
         'badge_icon' => 'journal-heart',
         'badge' => 'Psicóloga | CRP 17/1671',
         'title_parts' => [
-            'Jersika Carvalho, psicóloga dedicada',
-            'ao universo feminino',
-            'com escuta sensível e acolhimento.',
+            'Um espaço seguro para mulheres que desejam se',
+            'reconectar',
+            'com sua essência.',
         ],
         'lead' => 'Atendimento psicológico individual para mulheres, com foco em autoconhecimento, ressignificação de histórias e construção de relações mais saudáveis consigo e com o outro.',
         'primary_cta' => [
@@ -113,8 +113,8 @@ return [
         ],
     ],
     'how' => [
-        'title' => 'Como funciona o acompanhamento com a Jersika',
-        'text' => 'Um processo claro, cuidadoso e humanizado desde o primeiro contato até a continuidade terapêutica.',
+        'title' => 'Como funciona o acompanhamento de um processo terapêutico.',
+        'text' => 'Um acompanhamento terapêutico conduzido com clareza, acolhimento e sensibilidade, oferecendo suporte humanizado desde o primeiro contato até o final de cada etapa da sua jornada emocional.',
         'steps' => [
             'Você solicita o agendamento pelo formulário ou WhatsApp',
             'Jersika retorna para alinhar horário e orientações iniciais',
