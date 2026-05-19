@@ -4,7 +4,8 @@
 {% set social_links = [
   {'href': facebook_url|default(''), 'icon': 'facebook', 'label': 'Facebook'},
   {'href': instagram_url|default(''), 'icon': 'instagram', 'label': 'Instagram'},
-  {'href': whatsapp_url|default(''), 'icon': 'whatsapp', 'label': 'WhatsApp'}
+  {'href': whatsapp_url|default(''), 'icon': 'whatsapp', 'label': 'WhatsApp'},
+  {'href': '#form-orcamento', 'icon': 'envelope', 'label': 'Contato por e-mail'}
 ] %}
 
 <footer class="footer mt-5">
@@ -27,7 +28,9 @@
       <nav class="footer-social" aria-label="Redes sociais">
         {% for social in social_links %}
           {% if social.href and social.href != '#' %}
-            <a class="footer-link" href="{{ social.href }}" target="_blank" rel="noopener noreferrer" aria-label="{{ social.label }}">
+            <a class="footer-link" href="{{ social.href }}"
+               {% if social.href starts with 'http' %}target="_blank" rel="noopener noreferrer"{% endif %}
+               aria-label="{{ social.label }}">
               <i class="bi bi-{{ social.icon }}"></i>
             </a>
           {% endif %}

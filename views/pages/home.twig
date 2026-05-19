@@ -237,6 +237,9 @@
             <div class="fw-semibold">{{ how.details_title|default('Diferenciais no atendimento') }}</div>
             <span class="badge text-bg-success-subtle border border-success-subtle">{{ how.details_badge|default('Atendimento') }}</span>
           </div>
+          {% if how.quote|default('') %}
+          <p class="text-secondary-emphasis fst-italic mb-3">“{{ how.quote }}”</p>
+          {% endif %}
           <ul class="checklist mb-0">
             {% for detail in how.details|default([]) %}
             <li><i class="bi bi-check2-circle"></i> {{ detail }}</li>
