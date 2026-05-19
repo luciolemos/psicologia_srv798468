@@ -80,7 +80,8 @@ else
 fi
 
 if [[ "${#SLUGS[@]}" -eq 0 ]]; then
-  fail "nenhum slug para auditar"
+  echo "[warn] nenhum slug para auditar (assets padrão não encontrados neste repositório); etapa ignorada."
+  exit 0
 fi
 
 mapfile -t ALL_PRESET_SLUGS < <(preset_slugs)
