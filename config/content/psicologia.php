@@ -8,10 +8,10 @@ return [
         'description' => 'Psicóloga dedicada ao universo feminino, com escuta sensível e prática voltada ao acolhimento, autoconhecimento e ressignificação de histórias.',
         'site_name' => 'Jersika Carvalho',
         'image' => [
-            'src' => 'assets/img/hero/jersika_carvalho-desktop-1086.webp',
-            'width' => 1086,
-            'height' => 1448,
-            'alt' => 'Jersika Carvalho em atendimento psicológico acolhedor',
+            'src' => 'assets/img/social/psicologia-og.jpg',
+            'width' => 1200,
+            'height' => 630,
+            'alt' => 'Atendimento psicológico em ambiente reservado e acolhedor',
         ],
         'schema' => [
             'type' => 'MedicalBusiness',
@@ -34,9 +34,9 @@ return [
         'badge_icon' => 'journal-heart',
         'badge' => 'Psicóloga | CRP 17/1671',
         'title_parts' => [
-            'Um espaço seguro para mulheres que desejam se',
-            'reconectar',
-            'com sua essência.',
+            'Jersika Carvalho, psicóloga dedicada',
+            'ao universo feminino',
+            'com escuta sensível e acolhimento.',
         ],
         'lead' => 'Atendimento psicológico individual para mulheres, com foco em autoconhecimento, ressignificação de histórias e construção de relações mais saudáveis consigo e com o outro.',
         'primary_cta' => [
