@@ -34,11 +34,8 @@ return [
         // 'badge' => 'Psicologia com escuta atenta, ritmo seguro e ambiente reservado',
         'badge' => 'CRP 17/1671',
         'title_parts' => [
-            // 'Atendimento psicológico',
             'Um espaço seguro para mulheres que desejam',
-            // 'calmo e presente',
             'se reconectar',
-            // 'para cuidar da sua saúde emocional com mais clareza e fôlego.',
             'com sua essência.',
         ],
         // 'lead' => 'Atendimento psicológico individual com escuta qualificada, organização do cuidado e uma presença clínica acolhedora para atravessar ansiedade, sobrecarga, conflitos e processos de mudança com mais estabilidade.',
