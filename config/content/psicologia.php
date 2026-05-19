@@ -57,8 +57,8 @@ return [
         'proof' => [
             'title' => 'Atendimento profissional com presença e continuidade',
             'lines' => [
-                'Conduzido por psicóloga com escuta qualificada, em um espaço seguro para elaborar emoções e experiências.',
-                'Processo organizado com acompanhamento contínuo, respeitando seu tempo e sua história.',
+                'Com Jersica Carvalho, encontrei escuta qualificada em um espaço seguro para elaborar minhas emoções e experiências.',
+                'Senti um processo organizado, com acompanhamento contínuo e respeito ao meu tempo e à minha história.',
             ],
         ],
         'image' => [
