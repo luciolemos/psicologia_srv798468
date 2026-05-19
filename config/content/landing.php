@@ -32,7 +32,7 @@ return [
         'cta' => 'Agendar',
     ],
     'typography' => [
-        'profile' => 'feminine',
+        'profile' => 'clinical',
     ],
     'hero' => [
         'badge_icon' => 'journal-heart',
