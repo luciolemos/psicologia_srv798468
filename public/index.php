@@ -171,7 +171,7 @@ $rateLimiter = extension_loaded('apcu') && (bool) ini_get('apc.enabled')
 
 $mailerInner = new ContactMailer([
     'app_name'        => $_ENV['APP_NAME'] ?? 'Clínica Médica',
-    'mail_logo_light' => $_ENV['MAIL_LOGO_LIGHT'] ?? 'assets/img/brand/jerssica-square-light.png',
+    'mail_logo_light' => $_ENV['MAIL_LOGO_LIGHT'] ?? 'assets/img/brand/jerssica-square-dark.png',
     'contact_from'    => $_ENV['CONTACT_FROM'] ?? null,
     'mail_driver'     => $_ENV['MAIL_DRIVER'] ?? 'mail',
     'smtp_host'       => $_ENV['SMTP_HOST'] ?? '',
