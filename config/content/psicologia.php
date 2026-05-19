@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 return [
     'seo' => [
-        'title' => 'Clínica de Psicologia EMOTION | Atendimento psicológico com escuta qualificada',
+        'title' => 'Jersika Carvalho | Atendimento psicológico com escuta qualificada',
         'description' => 'Psicologia com escuta acolhedora, atendimento individual e acompanhamento com privacidade, clareza e organização.',
-        'site_name' => 'Clínica de Psicologia EMOTION',
+        'site_name' => 'Jersika Carvalho',
         'image' => [
             'src' => 'assets/img/social/psicologia-og.jpg',
             'width' => 1200,
@@ -15,7 +15,8 @@ return [
         ],
         'schema' => [
             'type' => 'MedicalBusiness',
-            'logo' => 'assets/img/psicologia-mark.svg',
+            // 'logo' => 'assets/img/psicologia-mark.svg',
+            'logo' => 'assets/img/jerssica.png',
             'area_served' => 'Rio Grande do Norte',
             'include_services' => true,
             'include_faq' => true,
@@ -30,13 +31,15 @@ return [
     ],
     'hero' => [
         'badge_icon' => 'journal-heart',
-        'badge' => 'Psicologia com escuta atenta, ritmo seguro e ambiente reservado',
+        // 'badge' => 'Psicologia com escuta atenta, ritmo seguro e ambiente reservado',
+        'badge' => 'CRP 17/1671',
         'title_parts' => [
-            'Atendimento psicológico',
-            'calmo e presente',
-            'para cuidar da sua saúde emocional e mental com mais clareza e fôlego.',
+            'Um espaço seguro para mulheres que desejam',
+            'se reconectar',
+            'com sua essência.',
         ],
-        'lead' => 'Atendimento psicológico individual com escuta qualificada, organização do cuidado e uma presença clínica acolhedora para atravessar ansiedade, sobrecarga, conflitos e processos de mudança com mais estabilidade.',
+        // 'lead' => 'Atendimento psicológico individual com escuta qualificada, organização do cuidado e uma presença clínica acolhedora para atravessar ansiedade, sobrecarga, conflitos e processos de mudança com mais estabilidade.',
+        'lead' => 'Acolhimento, escuta e transformação emocional para mulheres que se sentem inseguras, sobrecarregadas ou desconectadas de si mesmas.',
         'primary_cta' => [
             'label' => 'Marcar primeiro atendimento',
             'href' => '#cta',
@@ -60,16 +63,16 @@ return [
             ],
         ],
         'image' => [
-            'src' => 'assets/img/hero/psicologia-640.webp',
+            'src' => 'assets/img/hero/jersika_carvalho-desktop-640.webp',
             'sources' => [
-                ['path' => 'assets/img/hero/psicologia-640.webp', 'width' => 640],
-                ['path' => 'assets/img/hero/psicologia-960.webp', 'width' => 960],
-                ['path' => 'assets/img/hero/psicologia-1896.webp', 'width' => 1896],
+                ['path' => 'assets/img/hero/jersika_carvalho-desktop-640.webp', 'width' => 640],
+                ['path' => 'assets/img/hero/jersika_carvalho-desktop-960.webp', 'width' => 960],
+                ['path' => 'assets/img/hero/jersika_carvalho-desktop-1086.webp', 'width' => 1086],
             ],
             'mobile' => [
-                'src' => 'assets/img/hero/psicologia-mobile-640.webp',
+                'src' => 'assets/img/hero/jersika_carvalho-mobile-640.webp',
                 'sources' => [
-                    ['path' => 'assets/img/hero/psicologia-mobile-640.webp', 'width' => 640],
+                    ['path' => 'assets/img/hero/jersika_carvalho-mobile-640.webp', 'width' => 640],
                 ],
                 'sizes' => '92vw',
                 'media' => '(max-width: 576px)',
@@ -78,24 +81,25 @@ return [
             ],
             'alt' => 'Profissional de psicologia em conversa acolhedora com paciente',
             'width' => 640,
-            'height' => 360,
+            'height' => 853,
         ],
         'metrics' => [
-            ['kpi' => 'Escuta', 'label' => 'Profunda'],
-            ['kpi' => 'Ritmo', 'label' => 'Seguro'],
-            ['kpi' => 'Processo', 'label' => 'Contínuo'],
+            ['kpi' => 'Autoconhecimento', 'label' => 'Olhar para dentro com gentileza e clareza.'],
+            ['kpi' => 'Saúde emocional', 'label' => 'Cuidar do que sente com leveza e verdade.'],
+            ['kpi' => 'Autoestima', 'label' => 'Reconhecer seu valor e ocupar seu espaço.'],
         ],
     ],
     'moments' => [
         'title' => 'Psicologia para atravessar fases, vínculos e sobrecargas',
-        'text' => 'Um acompanhamento que acolhe sofrimento emocional, organiza o processo terapêutico e sustenta conversas importantes com presença e respeito.',
+        // 'text' => 'Um acompanhamento que acolhe sofrimento emocional, organiza o processo terapêutico e sustenta conversas importantes com presença e respeito.',
+        'text' => 'Muitas mulheres carregam dores silenciosas que começaram lá atrás, em experiências acumuladas ao longo da vida. Com o tempo, essa dor passa a ser confundida com verdade.',
         'pills' => [
-            ['icon' => 'journal-heart', 'label' => 'Escuta clínica'],
-            ['icon' => 'emoji-neutral', 'label' => 'Ansiedade e sobrecarga'],
-            ['icon' => 'people', 'label' => 'Relações e limites'],
-            ['icon' => 'clipboard2-check', 'label' => 'Processo terapêutico'],
-            ['icon' => 'journal-text', 'label' => 'Acompanhamento contínuo'],
-            ['icon' => 'calendar2-heart', 'label' => 'Horário protegido'],
+            ['icon' => 'journal-heart', 'label' => 'Fortalecimento emocional'],
+            ['icon' => 'emoji-neutral', 'label' => 'Desenvolvimento da autoestima'],
+            ['icon' => 'people', 'label' => 'Relações mais saudáveis'],
+            ['icon' => 'clipboard2-check', 'label' => 'Autoconhecimento'],
+            ['icon' => 'journal-text', 'label' => 'Redução da ansiedade emocional'],
+            ['icon' => 'calendar2-heart', 'label' => 'Reconexão com sua essência'],
         ],
     ],
     'services' => [
@@ -234,9 +238,9 @@ return [
         ],
     ],
     'footer' => [
-        'label' => 'Psicologia',
-        'address' => 'Atendimento psicológico com horário agendado',
-        'meta' => 'Escuta qualificada, acompanhamento individual e cuidado emocional',
+        'label' => 'CRP 17/1671',
+        'address' => 'Formação em Psicologia Corporal.',
+        'meta' => 'Especiaista em família. Formação em Psicologia Corporal. Formação em Terapia para Mulheres. Formação em Psicanálise.',
         'emergency_note' => 'Atendimento eletivo. Em caso de crise aguda, risco imediato ou urgência em saúde mental, procure atendimento emergencial presencial.',
     ],
     'floating_whatsapp' => [

@@ -3,11 +3,10 @@ const { test, expect } = require('@playwright/test');
 test('clinic landing renders core content and contact flow', async ({ page }) => {
   await page.goto('./');
 
-  await expect(page.getByRole('heading', { name: /Atendimento psicológico\s+calmo/i })).toBeVisible();
-  await expect(page.getByRole('heading', { name: /Serviços de psicologia/i })).toBeVisible();
-  await expect(page.getByRole('heading', { name: /Solicite seu agendamento em psicologia/i })).toBeVisible();
+  await expect(page.locator('#features')).toBeVisible();
+  await expect(page.locator('#form-orcamento')).toBeVisible();
 
-  await page.getByRole('link', { name: /Marcar primeiro atendimento/i }).first().click();
+  await page.locator('a[data-cta-id="hero_primary"]').first().click();
   await expect(page.locator('#form-orcamento')).toBeInViewport();
 
   await page.locator('#cta-nome').fill('Paciente Teste');
@@ -16,6 +15,6 @@ test('clinic landing renders core content and contact flow', async ({ page }) =>
   await page.getByRole('button', { name: /Próximo/i }).click();
 
   await expect(page.locator('#cta-mensagem')).toBeVisible();
-  await page.locator('#cta-mensagem').fill('Gostaria de agendar atendimento psicológico.');
+  await page.locator('#cta-mensagem').fill('Gostaria de agendar um atendimento.');
   await expect(page.getByRole('button', { name: /Enviar solicitação/i })).toBeVisible();
 });

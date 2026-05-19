@@ -68,10 +68,10 @@ final class CreateLandingScriptTest extends TestCase
         self::assertStringContainsString('phpstan:', (string) file_get_contents($target . '/.github/workflows/ci.yml'));
         self::assertStringContainsString('phpunit:', (string) file_get_contents($target . '/.github/workflows/ci.yml'));
         self::assertStringContainsString('visual-tests:', (string) file_get_contents($target . '/.github/workflows/ci.yml'));
-        self::assertFileExists($target . '/public/assets/img/hero/psicologia-640.webp');
-        self::assertFileExists($target . '/public/assets/img/hero/psicologia-mobile-640.webp');
+        self::assertFileExists($target . '/public/assets/img/hero/jersika_carvalho-desktop-640.webp');
+        self::assertFileExists($target . '/public/assets/img/hero/jersika_carvalho-mobile-640.webp');
         self::assertFileExists($target . '/public/assets/img/social/psicologia-og.jpg');
-        self::assertFileDoesNotExist($target . '/public/assets/img/hero/medico-640.webp');
+        self::assertFileDoesNotExist($target . '/public/assets/img/hero/medico-desktop-640.webp');
 
         $validateCommand = escapeshellarg(PHP_BINARY)
             . ' ' . escapeshellarg($target . '/scripts/validate-landing-content.php')
