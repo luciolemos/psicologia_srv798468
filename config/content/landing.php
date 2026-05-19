@@ -11,10 +11,10 @@ return [
         'type' => 'website',
         'twitter_card' => 'summary_large_image',
         'image' => [
-            'src' => 'assets/img/social/psicologia-og.jpg',
-            'width' => 1200,
-            'height' => 630,
-            'alt' => 'Atendimento psicológico em ambiente reservado e acolhedor',
+            'src' => 'assets/img/hero/jersika_carvalho-desktop-1086.webp',
+            'width' => 1086,
+            'height' => 1448,
+            'alt' => 'Jersika Carvalho em atendimento psicológico acolhedor',
         ],
         'schema' => [
             'type' => 'MedicalBusiness',
