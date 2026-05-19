@@ -916,6 +916,43 @@ html.fx-ready .glass {
   filter: var(--hero-image-filter);
 }
 
+.hero-media {
+  position: relative;
+  isolation: isolate;
+}
+
+.hero-shirt-tint {
+  --shirt-tint: rgba(41, 102, 212, 0.32);
+  position: absolute;
+  z-index: 2;
+  left: 48%;
+  top: 51%;
+  width: clamp(170px, 22vw, 280px);
+  height: clamp(230px, 32vw, 360px);
+  border-radius: 48% 52% 45% 55% / 44% 44% 56% 56%;
+  background: radial-gradient(circle at 52% 42%, var(--shirt-tint) 0%, transparent 72%);
+  mix-blend-mode: multiply;
+  opacity: 0.88;
+  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(-8deg);
+}
+
+html[data-palette="red"] .hero-shirt-tint {
+  --shirt-tint: rgba(170, 45, 52, 0.33);
+}
+
+html[data-palette="emerald"] .hero-shirt-tint {
+  --shirt-tint: rgba(22, 138, 116, 0.33);
+}
+
+html[data-palette="amber"] .hero-shirt-tint {
+  --shirt-tint: rgba(189, 122, 18, 0.33);
+}
+
+html[data-palette="violet"] .hero-shirt-tint {
+  --shirt-tint: rgba(104, 78, 186, 0.33);
+}
+
 html.fx-ready .hero-media img {
   box-shadow: var(--shadow-lg);
 }
@@ -929,6 +966,10 @@ html.fx-ready .hero-media img {
     transform: none !important;
     text-shadow: none !important;
     filter: none !important;
+  }
+
+  .hero-shirt-tint {
+    display: none !important;
   }
 
   .blob {
