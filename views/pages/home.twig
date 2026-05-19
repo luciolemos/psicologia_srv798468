@@ -237,6 +237,9 @@
             <div class="fw-semibold">{{ how.details_title|default('Diferenciais no atendimento') }}</div>
             <span class="badge text-bg-success-subtle border border-success-subtle">{{ how.details_badge|default('Atendimento') }}</span>
           </div>
+          {% if how.bio|default('') %}
+          <p class="text-secondary-emphasis mb-3">{{ how.bio }}</p>
+          {% endif %}
           {% if how.quote|default('') %}
           <p class="text-secondary-emphasis fst-italic mb-3">“{{ how.quote }}”</p>
           {% endif %}
