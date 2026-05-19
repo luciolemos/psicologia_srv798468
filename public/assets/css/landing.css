@@ -112,10 +112,14 @@ html[data-niche="estetica"] {
 }
 
 html[data-niche="psicologia"] {
-  --font-body: "Lato", "Trebuchet MS", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-  --font-heading: "Trebuchet MS", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-  --heading-weight: 800;
-  --heading-letter-spacing: -0.01em;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --font-heading: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-ui: "Source Sans 3", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+  --heading-weight: 600;
+  --body-letter-spacing: 0.01em;
+  --heading-letter-spacing: 0.01em;
+  --button-letter-spacing: 0.02em;
+  --button-weight: 600;
   --grid-opacity: 0.035;
   --body-accent-mask: radial-gradient(circle at 18% 22%, black 18%, transparent 52%), radial-gradient(circle at 78% 84%, black 16%, transparent 54%);
   --body-overlay:
