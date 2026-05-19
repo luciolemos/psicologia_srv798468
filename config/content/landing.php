@@ -236,9 +236,10 @@ return [
         ],
     ],
     'footer' => [
-        'label' => 'Psicóloga | CRP 17/1671',
-        'address' => 'Jersika Carvalho - atendimento psicológico para mulheres',
-        'meta' => 'Formação em Psicologia Corporal. Especialização em Família. Especialização em Psicologia Analítica (em formação). Terapeuta de Mulheres (em formação).',
+        'title' => 'Jersika Carvalho',
+        'label' => 'Psicóloga • CRP 17/1671',
+        'address' => 'Atendimento psicológico para mulheres em Natal/RN',
+        'meta' => 'Psicologia Corporal • Especialização em Família • Psicologia Analítica (em formação) • Terapeuta de Mulheres (em formação)',
         'emergency_note' => 'Atendimento eletivo. Em caso de crise aguda, risco imediato ou urgência em saúde mental, procure atendimento emergencial presencial.',
         'credit' => 'Desenvolvido por <a href="https://natalcode.com.br/" target="_blank" rel="noopener noreferrer">NatalCode</a> - Soluções Digitais',
     ],

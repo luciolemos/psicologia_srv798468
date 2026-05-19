@@ -1,4 +1,6 @@
 {% set footer_content = landing_content.footer|default({}) %}
+{% set footer_title = footer_content.title|default(app_name|default('Landing de saúde')) %}
+{% set footer_label = footer_content.label|default('Atendimento') %}
 {% set social_links = [
   {'href': facebook_url|default(''), 'icon': 'facebook', 'label': 'Facebook'},
   {'href': instagram_url|default(''), 'icon': 'instagram', 'label': 'Instagram'},
@@ -10,7 +12,7 @@
     <div class="footer-main">
       <div>
         <div class="footer-title">
-          {{ app_name ?? 'Landing de saúde' }} - {{ footer_content.label|default('Atendimento') }}
+          {{ footer_title }}{% if footer_label %} • {{ footer_label }}{% endif %}
         </div>
 
         <div class="footer-meta small">
