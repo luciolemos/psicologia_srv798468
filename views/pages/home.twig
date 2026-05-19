@@ -304,8 +304,8 @@
 
     <div class="location-map-banner glass">
       <div class="location-map-bar">
-        <span><i class="bi bi-map"></i> Clínica de Psicologia EMOTION</span>
-        <span>Condomínio Central Park nº 255, Neópolis, Natal/RN</span>
+        <span><i class="bi bi-map"></i> {{ app_name|default('Atendimento psicológico') }}</span>
+        <span>{{ location.address|default('Atendimento psicológico com hora marcada') }}</span>
       </div>
       <iframe
         src="{{ location.map_embed_url }}"

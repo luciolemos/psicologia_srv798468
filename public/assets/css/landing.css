@@ -705,10 +705,40 @@ button:active {
   background: linear-gradient(90deg, transparent, var(--section-divider-mid), transparent);
 }
 
+.navbar-logo-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: clamp(114px, 16vw, 168px);
+  height: clamp(38px, 5.4vw, 52px);
+  flex: 0 0 auto;
+}
+
 .navbar-logo {
-  width: 38px;
-  height: 38px;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+  object-position: left center;
+}
+
+.navbar-logo-dark {
+  display: none;
+}
+
+.navbar-logo-light {
+  display: block;
+  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.45));
+}
+
+html[data-theme="light"] .navbar-logo-dark {
+  display: block;
+}
+
+html[data-theme="light"] .navbar-logo-light {
+  display: none;
 }
 
 .hero {
