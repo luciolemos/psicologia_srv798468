@@ -237,7 +237,7 @@ return [
     'footer' => [
         'title' => 'Jersika Carvalho',
         'label' => 'Psicóloga • CRP 17/1671',
-        'address' => 'Instagram: @jersikacarvalho.psi • +55 71 8400-5128 • jersikacarvalho.psi@gmail.com',
+        // 'address' => 'Instagram: @jersikacarvalho.psi • +55 71 8400-5128 • jersikacarvalho.psi@gmail.com',
         'meta' => 'Atendimento psicológico para mulheres • Psicologia Corporal • Especialização em Família • Psicologia Analítica (em formação) • Terapeuta de Mulheres (em formação)',
         'emergency_note' => 'Atendimento eletivo. Em caso de crise aguda, risco imediato ou urgência em saúde mental, procure atendimento emergencial presencial.',
     ],
