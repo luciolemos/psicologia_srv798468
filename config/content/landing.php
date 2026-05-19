@@ -71,7 +71,7 @@ return [
             ],
             'title' => 'Atendimento profissional com presença e continuidade',
             'lines' => [
-                'Jersica Carvalho é uma profissional extremamente competente, sensível e acolhedora, dedicada ao cuidado e ao fortalecimento emocional de mulheres.',
+                'Jersika Carvalho é uma profissional extremamente competente, sensível e acolhedora, dedicada ao cuidado e ao fortalecimento emocional de mulheres.',
                 'Em cada sessão, uma escuta atenta, um acompanhamento cuidadoso em um espaço realmente seguro e acolhedor.',
             ],
         ],
