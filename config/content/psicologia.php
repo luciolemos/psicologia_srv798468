@@ -90,7 +90,7 @@ return [
     ],
     'moments' => [
         'title' => 'Para mulheres que buscam acolhimento e autoconhecimento',
-        'text' => 'A terapia oferece um espaço de escuta para compreender dores emocionais, fortalecer sua identidade e transformar padrões que já não fazem sentido.',
+        'text' => 'Este espaço nasce como um lugar de escuta, acolhimento e transformação. Meu propósito é ajudar mulheres a reencontrarem sua força, seu valor e sua essência através do autoconhecimento e do cuidado emocional. Aqui você pode se permitir ser quem é, sem julgamentos, com verdade, coragem e afeto.',
         'pills' => [
             ['icon' => 'chat-heart', 'label' => 'Acolhimento emocional'],
             ['icon' => 'emoji-neutral', 'label' => 'Autoestima e autovalor'],
@@ -124,6 +124,7 @@ return [
         ],
         'details_title' => 'Diferenciais da prática profissional',
         'details_badge' => 'Psicóloga',
+        'quote' => 'A terapia pode ser o caminho para reencontrar sua verdadeira essência.',
         'details' => [
             'Psicóloga dedicada ao universo feminino',
             'Escuta sensível com prática ética (CRP 17/1671)',
