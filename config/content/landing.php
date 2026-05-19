@@ -56,7 +56,7 @@ return [
         'trust_items' => [
             ['icon' => 'shield-check', 'label' => 'Privacidade emocional'],
             ['icon' => 'calendar2-check', 'label' => 'Horário protegido'],
-            ['icon' => 'journal-heart', 'label' => 'Escuta clínica'],
+            ['icon' => 'chat-heart', 'label' => 'Escuta clínica'],
         ],
         'proof' => [
             'avatar' => [
@@ -108,7 +108,7 @@ return [
         'title' => 'Para mulheres que buscam acolhimento e autoconhecimento',
         'text' => 'A terapia oferece um espaço de escuta para compreender dores emocionais, fortalecer sua identidade e transformar padrões que já não fazem sentido.',
         'pills' => [
-            ['icon' => 'journal-heart', 'label' => 'Acolhimento emocional'],
+            ['icon' => 'chat-heart', 'label' => 'Acolhimento emocional'],
             ['icon' => 'emoji-neutral', 'label' => 'Autoestima e autovalor'],
             ['icon' => 'people', 'label' => 'Relações familiares e afetivas'],
             ['icon' => 'clipboard2-check', 'label' => 'Autoconhecimento'],
@@ -171,8 +171,8 @@ return [
         'note' => 'Após o contato, a equipe confirma disponibilidade de horário e envia as orientações de chegada.',
         'primary_label' => 'Solicitar agendamento',
         'secondary_label' => 'Abrir rota',
-        'map_embed_url' => 'https://maps.google.com/maps?center=-5.861295633849962,-35.2124969876455&q=-5.861295633849962,-35.2124969876455&z=16&output=embed',
-        'map_link' => 'https://www.google.com/maps/search/?api=1&query=-5.861295633849962,-35.2124969876455&zoom=16',
+        'map_embed_url' => 'https://maps.google.com/maps?center=-12.973049326932946,-38.44097323442949&q=-12.973049326932946,-38.44097323442949&z=16&output=embed',
+        'map_link' => 'https://www.google.com/maps/search/?api=1&query=-12.973049326932946,-38.44097323442949&zoom=16',
         'iframe_title' => 'Mapa: atendimento psicológico com Jersika Carvalho (Natal, RN)',
     ],
     'cta' => [
