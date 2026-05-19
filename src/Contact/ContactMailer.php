@@ -173,7 +173,7 @@ final class ContactMailer implements MailerInterface
         $logoUrl        = $this->absoluteAssetUrl($logoPath, $origin);
         $safeLogoUrl    = htmlspecialchars($logoUrl, ENT_QUOTES, 'UTF-8');
 
-        $normalizedWhatsapp = $this->normalizeWhatsappNumber((string) ($data['telefone'] ?? ''));
+        $normalizedWhatsapp = $this->resolveSupportWhatsappNumber((string) ($data['telefone'] ?? ''));
         $whatsMessage = rawurlencode('Olá! Recebemos sua solicitação de agendamento. Protocolo: ' . $requestId . '. Vamos continuar por aqui.');
         $whatsHref    = $normalizedWhatsapp !== null ? 'https://wa.me/' . $normalizedWhatsapp . '?text=' . $whatsMessage : '#';
         $safeWhatsHref = htmlspecialchars($whatsHref, ENT_QUOTES, 'UTF-8');
@@ -284,6 +284,24 @@ HTML;
         }
 
         return strlen($digits) >= 12 ? $digits : null;
+    }
+
+    private function resolveSupportWhatsappNumber(string $fallbackRawPhone): ?string
+    {
+        $configuredUrl = trim((string) ($this->config['whatsapp_url'] ?? ''));
+        if ($configuredUrl !== '') {
+            if (preg_match('#wa\.me/(\d{10,16})#', $configuredUrl, $matches) === 1) {
+                return $matches[1];
+            }
+        }
+
+        $configuredNumber = trim((string) ($this->config['app_whatsapp_number'] ?? ''));
+        $normalizedConfigured = $this->normalizeWhatsappNumber($configuredNumber);
+        if ($normalizedConfigured !== null) {
+            return $normalizedConfigured;
+        }
+
+        return $this->normalizeWhatsappNumber($fallbackRawPhone);
     }
 
     private function useSmtpDriver(): bool
