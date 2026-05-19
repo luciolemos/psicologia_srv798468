@@ -10,6 +10,8 @@ use App\Contact\MailerInterface;
 use App\Contact\RateLimiterInterface;
 use App\Contact\RecaptchaVerifierInterface;
 use App\Core\SeoMetadata;
+use DateTimeImmutable;
+use DateTimeZone;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Views\Twig;
@@ -176,7 +178,7 @@ final class HomeController
             return $this->redirectToForm($response);
         }
 
-        $submittedAt = date('d/m/Y H:i:s');
+        $submittedAt = $this->now()->format('d/m/Y H:i:s');
         $origin      = $this->resolveOrigin();
         $subject     = $this->brandName() . ' | Nova solicitação de agendamento - Protocolo ' . $requestId;
         $textBody    = $this->mailer->buildTextBody($eventId, $requestId, $submittedAt, $data, $origin);
@@ -356,9 +358,9 @@ final class HomeController
     {
         $prefix = $this->eventPrefix();
         try {
-            return $prefix . '_' . date('YmdHis') . '_' . bin2hex(random_bytes(6));
+            return $prefix . '_' . $this->now()->format('YmdHis') . '_' . bin2hex(random_bytes(6));
         } catch (\Throwable $e) {
-            return $prefix . '_' . date('YmdHis') . '_' . substr(sha1((string) microtime(true)), 0, 12);
+            return $prefix . '_' . $this->now()->format('YmdHis') . '_' . substr(sha1((string) microtime(true)), 0, 12);
         }
     }
 
@@ -366,9 +368,9 @@ final class HomeController
     {
         $prefix = $this->requestPrefix();
         try {
-            return $prefix . '-' . date('Ymd') . '-' . strtoupper(bin2hex(random_bytes(2)));
+            return $prefix . '-' . $this->now()->format('Ymd') . '-' . strtoupper(bin2hex(random_bytes(2)));
         } catch (\Throwable $e) {
-            return $prefix . '-' . date('Ymd') . '-' . strtoupper(substr(sha1((string) microtime(true)), 0, 4));
+            return $prefix . '-' . $this->now()->format('Ymd') . '-' . strtoupper(substr(sha1((string) microtime(true)), 0, 4));
         }
     }
 
@@ -400,5 +402,16 @@ final class HomeController
 
         $slug = strtoupper(str_replace('_', '', $this->eventPrefix()));
         return substr($slug !== '' ? $slug : 'LANDING', 0, 6);
+    }
+
+    private function now(): DateTimeImmutable
+    {
+        $timezone = trim((string) ($this->config['app_timezone'] ?? 'America/Bahia'));
+
+        try {
+            return new DateTimeImmutable('now', new DateTimeZone($timezone));
+        } catch (\Throwable $e) {
+            return new DateTimeImmutable('now');
+        }
     }
 }

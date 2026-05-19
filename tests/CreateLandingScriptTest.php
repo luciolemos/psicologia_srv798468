@@ -58,8 +58,8 @@ final class CreateLandingScriptTest extends TestCase
         self::assertFileExists($target . '/phpstan.neon');
         self::assertStringContainsString('APP_CONTENT_FILE="psicologia"', (string) file_get_contents($target . '/.env'));
         self::assertStringContainsString('APP_SLUG="psicologia"', (string) file_get_contents($target . '/.env'));
-        self::assertStringContainsString('APP_WHATSAPP_NUMBER="5584996360721"', (string) file_get_contents($target . '/.env'));
-        self::assertStringContainsString('APP_WHATSAPP_MESSAGE="Oi! Quero conversar sobre o projeto de uma landing page com a NatalCode."', (string) file_get_contents($target . '/.env'));
+        self::assertStringContainsString('APP_WHATSAPP_NUMBER="557184005128"', (string) file_get_contents($target . '/.env'));
+        self::assertStringContainsString('APP_WHATSAPP_MESSAGE="Oi, Jersika! Gostaria de agendar um atendimento psicológico."', (string) file_get_contents($target . '/.env'));
         self::assertStringContainsString('location-map-banner', (string) file_get_contents($target . '/views/pages/home.twig'));
         self::assertStringContainsString('location-map-banner', (string) file_get_contents($target . '/public/assets/css/landing.css'));
         self::assertStringContainsString("'location' => [", (string) file_get_contents($target . '/config/content/landing.php'));
