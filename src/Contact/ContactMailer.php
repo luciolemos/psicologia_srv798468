@@ -169,6 +169,9 @@ final class ContactMailer implements MailerInterface
         $safeSubmittedAt = htmlspecialchars($submittedAt, ENT_QUOTES, 'UTF-8');
         $safeOrigin     = htmlspecialchars($origin, ENT_QUOTES, 'UTF-8');
         $safeBrandName  = htmlspecialchars($brandName, ENT_QUOTES, 'UTF-8');
+        $logoPath       = trim((string) ($this->config['mail_logo_light'] ?? 'assets/img/brand/jerssica-square-light.png'));
+        $logoUrl        = $this->absoluteAssetUrl($logoPath, $origin);
+        $safeLogoUrl    = htmlspecialchars($logoUrl, ENT_QUOTES, 'UTF-8');
 
         $normalizedWhatsapp = $this->normalizeWhatsappNumber((string) ($data['telefone'] ?? ''));
         $whatsMessage = rawurlencode('Olá! Recebemos sua solicitação de agendamento. Protocolo: ' . $requestId . '. Vamos continuar por aqui.');
@@ -181,6 +184,9 @@ final class ContactMailer implements MailerInterface
   <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="max-width:680px;margin:0 auto;background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;">
     <tr>
       <td style="padding:16px;background:#ffffff;color:#111827;border-bottom:1px solid #e5e7eb;">
+        <div style="margin-bottom:10px;">
+          <img src="{$safeLogoUrl}" alt="{$safeBrandName}" style="width:64px;height:64px;object-fit:contain;display:block;">
+        </div>
         <div style="font-size:20px;line-height:1.3;font-weight:800;">{$safeBrandName}</div>
         <div style="font-size:18px;line-height:1.3;font-weight:700;margin-top:8px;">Nova solicitação de agendamento</div>
         <div style="font-size:13px;color:#4b5563;margin-top:4px;">Contato recebido pelo site da clínica</div>
@@ -239,6 +245,21 @@ final class ContactMailer implements MailerInterface
   </table>
 </div>
 HTML;
+    }
+
+    private function absoluteAssetUrl(string $assetPath, string $origin): string
+    {
+        if ($assetPath === '') {
+            return $origin . '/assets/img/brand/jerssica-square-light.png';
+        }
+
+        if (preg_match('#^https?://#i', $assetPath) === 1) {
+            return $assetPath;
+        }
+
+        $normalizedAsset = ltrim($assetPath, '/');
+        $normalizedOrigin = rtrim($origin, '/');
+        return $normalizedOrigin . '/' . $normalizedAsset;
     }
 
     private function normalizeWhatsappNumber(string $rawPhone): ?string

@@ -171,6 +171,7 @@ $rateLimiter = extension_loaded('apcu') && (bool) ini_get('apc.enabled')
 
 $mailerInner = new ContactMailer([
     'app_name'        => $_ENV['APP_NAME'] ?? 'Clínica Médica',
+    'mail_logo_light' => $_ENV['MAIL_LOGO_LIGHT'] ?? 'assets/img/brand/jerssica-square-light.png',
     'contact_from'    => $_ENV['CONTACT_FROM'] ?? null,
     'mail_driver'     => $_ENV['MAIL_DRIVER'] ?? 'mail',
     'smtp_host'       => $_ENV['SMTP_HOST'] ?? '',
@@ -209,6 +210,7 @@ $controller = new HomeController($twig, [
     'facebook_url'         => $_ENV['FACEBOOK_URL'] ?? '#',
     'instagram_url'        => $_ENV['INSTAGRAM_URL'] ?? '#',
     'whatsapp_url'         => $whatsappUrl,
+    'app_timezone'         => $_ENV['APP_TIMEZONE'] ?? 'America/Bahia',
 ], $recaptchaVerifier, $rateLimiter, $mailer, $leadLogger);
 
 $app = AppFactory::create();
