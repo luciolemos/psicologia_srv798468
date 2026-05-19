@@ -210,28 +210,28 @@ return [
         'privacy_note' => 'Ao enviar, voce autoriza o uso dos dados informados para retorno sobre o agendamento psicologico. Evite relatar detalhes intimos ou sensiveis alem do necessario para o primeiro contato.',
     ],
     'faq' => [
-        'title' => 'Duvidas frequentes',
-        'text' => 'Informacoes importantes antes de solicitar seu primeiro atendimento.',
+        'title' => 'Dúvidas frequentes',
+        'text' => 'Informações importantes antes de solicitar seu primeiro atendimento.',
         'items' => [
             [
-                'question' => 'Quem e Jersika Carvalho?',
-                'answer' => 'Jersika Carvalho e psicologa (CRP 17/1671), dedicada ao universo feminino, com escuta sensivel e pratica voltada ao acolhimento, autoconhecimento e ressignificacao de historias.',
+                'question' => 'Quem é Jersika Carvalho?',
+                'answer' => 'Jersika Carvalho é psicóloga (CRP 17/1671), dedicada ao universo feminino, com escuta sensível e prática voltada ao acolhimento, autoconhecimento e ressignificação de histórias.',
             ],
             [
-                'question' => 'Qual e a formacao da profissional?',
-                'answer' => 'Psicologa com formacao em Psicologia Corporal, especializacao em Familia, especializacao em Psicologia Analitica (em formacao) e atuacao como Terapeuta de Mulheres (em formacao).',
+                'question' => 'Qual é a formação da profissional?',
+                'answer' => 'Psicóloga com formação em Psicologia Corporal, especialização em Família, especialização em Psicologia Analítica (em formação) e atuação como Terapeuta de Mulheres (em formação).',
             ],
             [
                 'question' => 'Como funciona o primeiro atendimento?',
-                'answer' => 'A primeira sessao acolhe sua historia, momento atual e principais demandas. A partir disso, sao alinhados os proximos passos do processo terapeutico.',
+                'answer' => 'A primeira sessão acolhe sua história, momento atual e principais demandas. A partir disso, são alinhados os próximos passos do processo terapêutico.',
             ],
             [
-                'question' => 'Preciso contar tudo no formulario?',
-                'answer' => 'Nao. Voce pode enviar apenas as informacoes essenciais para contato e agendamento. O aprofundamento acontece no espaco terapeutico.',
+                'question' => 'Preciso contar tudo no formulário?',
+                'answer' => 'Não. Você pode enviar apenas as informações essenciais para contato e agendamento. O aprofundamento acontece no espaço terapêutico.',
             ],
             [
-                'question' => 'Este site substitui atendimento de urgencia?',
-                'answer' => 'Nao. O site e para contato e agendamento. Em caso de crise aguda, risco imediato ou urgencia em saude mental, procure atendimento emergencial presencial.',
+                'question' => 'Este site substitui atendimento de urgência?',
+                'answer' => 'Não. O site é para contato e agendamento. Em caso de crise aguda, risco imediato ou urgência em saúde mental, procure atendimento emergencial presencial.',
             ],
         ],
     ],
