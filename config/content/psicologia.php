@@ -18,7 +18,7 @@ return [
             'logo' => 'assets/img/brand/jerssica-square-light.png',
             'logo_dark' => 'assets/img/brand/jerssica-square-dark.png',
             'logo_light' => 'assets/img/brand/jerssica-square-light.png',
-            'area_served' => 'Rio Grande do Norte',
+            'area_served' => 'Bahia',
             'include_services' => true,
             'include_faq' => true,
         ],
@@ -145,11 +145,11 @@ return [
     ],
     'location' => [
         'title' => 'Localização',
-        'eyebrow' => 'Natal, RN',
+        'eyebrow' => 'Salvador, BA',
         'address' => 'Atendimento psicológico com hora marcada',
         'description' => 'Espaço de atendimento da psicóloga Jersika Carvalho, com agenda organizada e ambiente reservado para conversas sensíveis.',
         'details' => [
-            ['icon' => 'geo-alt', 'label' => 'Natal, Rio Grande do Norte'],
+            ['icon' => 'geo-alt', 'label' => 'Salvador, Bahia'],
             ['icon' => 'calendar2-check', 'label' => 'Atendimentos realizados mediante agendamento prévio'],
             ['icon' => 'shield-lock', 'label' => 'Ambiente reservado para conversas sensíveis'],
         ],
@@ -158,7 +158,7 @@ return [
         'secondary_label' => 'Abrir rota',
         'map_embed_url' => 'https://maps.google.com/maps?center=-12.973049326932946,-38.44097323442949&q=-12.973049326932946,-38.44097323442949&z=16&output=embed',
         'map_link' => 'https://www.google.com/maps/search/?api=1&query=-12.973049326932946,-38.44097323442949&zoom=16',
-        'iframe_title' => 'Mapa: atendimento psicológico com Jersika Carvalho (Natal, RN)',
+        'iframe_title' => 'Mapa: atendimento psicológico com Jersika Carvalho (Salvador, BA)',
     ],
     'cta' => [
         'title' => 'Quer iniciar seu processo terapêutico com a Jersika?',
