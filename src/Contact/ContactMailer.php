@@ -169,7 +169,7 @@ final class ContactMailer implements MailerInterface
         $safeSubmittedAt = htmlspecialchars($submittedAt, ENT_QUOTES, 'UTF-8');
         $safeOrigin     = htmlspecialchars($origin, ENT_QUOTES, 'UTF-8');
         $safeBrandName  = htmlspecialchars($brandName, ENT_QUOTES, 'UTF-8');
-        $logoPath       = trim((string) ($this->config['mail_logo_light'] ?? 'assets/img/brand/jerssica-square-light.png'));
+        $logoPath       = trim((string) ($this->config['mail_logo_light'] ?? 'assets/img/brand/jerssica-square-dark.png'));
         $logoUrl        = $this->absoluteAssetUrl($logoPath, $origin);
         $safeLogoUrl    = htmlspecialchars($logoUrl, ENT_QUOTES, 'UTF-8');
 
@@ -250,7 +250,7 @@ HTML;
     private function absoluteAssetUrl(string $assetPath, string $origin): string
     {
         if ($assetPath === '') {
-            return $origin . '/assets/img/brand/jerssica-square-light.png';
+            return $origin . '/assets/img/brand/jerssica-square-dark.png';
         }
 
         if (preg_match('#^https?://#i', $assetPath) === 1) {
