@@ -71,8 +71,8 @@ return [
             ],
             'title' => 'Atendimento profissional com presença e continuidade',
             'lines' => [
-                'Com Jersica Carvalho, encontrei escuta qualificada em um espaço seguro para elaborar minhas emoções e experiências.',
-                'Senti um processo organizado, com acompanhamento contínuo e respeito ao meu tempo e à minha história.',
+                'Jersica Carvalho é uma profissional extremamente competente, sensível e acolhedora, dedicada ao cuidado e ao fortalecimento emocional de mulheres.',
+                'Em cada sessão, uma escuta atenta, um acompanhamento cuidadoso em um espaço realmente seguro e acolhedor.',
             ],
         ],
         'image' => [
