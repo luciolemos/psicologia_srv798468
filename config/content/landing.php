@@ -19,7 +19,7 @@ return [
         'schema' => [
             'type' => 'MedicalBusiness',
             'logo' => 'assets/img/brand/jerssica-square-light.png',
-            'logo_dark' => 'assets/img/brand/jerssica-square-light.png',
+            'logo_dark' => 'assets/img/brand/jerssica-square-dark.png',
             'logo_light' => 'assets/img/brand/jerssica-square-light.png',
             'price_range' => '$$',
             'area_served' => 'Rio Grande do Norte',
