@@ -63,6 +63,12 @@
   <link rel="shortcut icon" href="{{ base_url }}/{{ app_logo }}">
   <link rel="apple-touch-icon" href="{{ base_url }}/{{ app_logo }}">
 
+  {% if typography_profile == 'feminine' or (app_slug|default('') == 'psicologia') %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  {% endif %}
+
   {# ==============================
      CSS — LIBS
      ============================== #}

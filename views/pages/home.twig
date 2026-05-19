@@ -71,7 +71,7 @@
           <span>{{ hero.badge|default(app_badge|default('Atendimento humanizado')) }}</span>
         </div>
 
-        <h1 class="display-5 fw-bold lh-sm mb-3 hero-title-motion">
+        <h1 class="display-5 fw-normal lh-sm mb-3 hero-title-motion">
           <span class="hero-title-part hero-title-part-1">{{ hero.title_parts[0]|default(app_name|default('Atendimento')) }}</span>
           <span class="text-gradient hero-title-part hero-title-part-2 hero-title-highlight">{{ hero.title_parts[1]|default('próximo e organizado') }}</span>
           <span class="hero-title-part hero-title-part-3">{{ hero.title_parts[2]|default('para cuidar de cada solicitação com clareza.') }}</span>
@@ -173,7 +173,7 @@
 <section class="py-5 py-lg-6 section-tech">
   <div class="container">
     <div class="text-center mb-4 mb-lg-5 section-heading">
-      <h2 class="fw-bold">{{ moments.title|default('Atendimento para diferentes necessidades') }}</h2>
+      <h2 class="fw-normal">{{ moments.title|default('Atendimento para diferentes necessidades') }}</h2>
       <p class="text-secondary-emphasis mb-0">
         {{ moments.text|default('Uma operação organizada para receber, orientar e acompanhar cada solicitação com clareza.') }}
       </p>
@@ -193,7 +193,7 @@
 <section id="features" class="py-5 py-lg-6 section-tech">
   <div class="container">
     <div class="text-center mb-4 mb-lg-5 section-heading">
-      <h2 class="fw-bold">{{ services_section.title|default('Serviços') }}</h2>
+      <h2 class="fw-normal">{{ services_section.title|default('Serviços') }}</h2>
       <p class="text-secondary-emphasis mb-0">
         {{ services_section.text|default('Frentes de atendimento configuráveis conforme o nicho da landing.') }}
       </p>
@@ -216,7 +216,7 @@
 <section id="how" class="py-5 py-lg-6 section-tech">
   <div class="container">
     <div class="text-center mb-4 mb-lg-5 section-heading">
-      <h2 class="fw-bold">{{ how.title|default('Como funciona o atendimento') }}</h2>
+      <h2 class="fw-normal">{{ how.title|default('Como funciona o atendimento') }}</h2>
       <p class="text-secondary-emphasis mb-0">
         {{ how.text|default('Um fluxo simples para reduzir espera, organizar informações e deixar claro o próximo passo.') }}
       </p>
@@ -257,7 +257,7 @@
 <section id="estrutura" class="py-5 py-lg-6 section-tech">
   <div class="container">
     <div class="text-center mb-4 mb-lg-5 section-heading">
-      <h2 class="fw-bold mb-2">{{ structure.title|default('Estrutura pensada para o paciente') }}</h2>
+      <h2 class="fw-normal mb-2">{{ structure.title|default('Estrutura pensada para o paciente') }}</h2>
       <p class="text-secondary-emphasis mb-0">
         {{ structure.text|default('A experiência de atendimento combina acolhimento, organização e segurança das informações.') }}
       </p>
@@ -284,7 +284,7 @@
 <section id="localizacao" class="py-5 py-lg-6 section-tech">
   <div class="container">
     <div class="text-center mb-4 mb-lg-5 section-heading">
-      <h2 class="fw-bold">{{ location.title|default('Localização') }}</h2>
+      <h2 class="fw-normal">{{ location.title|default('Localização') }}</h2>
       {% if location.description|default(location.address|default('')) %}
       <p class="text-secondary-emphasis mb-0">{{ location.description|default(location.address) }}</p>
       {% endif %}
@@ -345,7 +345,7 @@
 <section id="cta" class="py-5 py-lg-6 section-tech">
   <div class="container">
     <div class="text-center mb-4 mb-lg-5 section-heading">
-      <h2 class="fw-bold">{{ cta.title|default('Precisa marcar uma consulta?') }}</h2>
+      <h2 class="fw-normal">{{ cta.title|default('Precisa marcar uma consulta?') }}</h2>
       <p class="text-secondary-emphasis mb-0">
         {{ cta.text|default('Envie seus dados e a equipe retorna para confirmar o melhor horário disponível.') }}
       </p>
@@ -382,7 +382,7 @@
 <section id="form-orcamento" class="py-5 py-lg-6 section-tech">
   <div class="container">
     <div class="text-center mb-4 mb-lg-5 section-heading">
-      <h2 class="fw-bold">{{ form.title|default('Solicite seu agendamento') }}</h2>
+      <h2 class="fw-normal">{{ form.title|default('Solicite seu agendamento') }}</h2>
       <p class="text-secondary-emphasis mb-0">
         {{ form.text|default('Informe seus contatos e o motivo da consulta para receber retorno da equipe.') }}
       </p>
@@ -529,7 +529,7 @@
 <section id="faq" class="py-5 py-lg-6 section-tech">
   <div class="container">
     <div class="text-center mb-4 mb-lg-5 section-heading">
-      <h2 class="fw-bold">{{ faq.title|default('Dúvidas frequentes') }}</h2>
+      <h2 class="fw-normal">{{ faq.title|default('Dúvidas frequentes') }}</h2>
       <p class="text-secondary-emphasis mb-0">
         {{ faq.text|default('Informações essenciais antes de solicitar seu agendamento.') }}
       </p>
