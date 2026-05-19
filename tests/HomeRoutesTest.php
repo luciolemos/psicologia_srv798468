@@ -157,9 +157,9 @@ final class HomeRoutesTest extends TestCase
         $html = (string) $response->getBody();
 
         self::assertSame(200, $response->getStatusCode());
-        self::assertStringContainsString('data-typography="warm"', $html);
-        self::assertStringContainsString('Cuidado médico', $html);
-        self::assertStringContainsString('Serviços da clínica', $html);
+        self::assertStringContainsString('data-typography="clinical"', $html);
+        self::assertStringContainsString('Jersika Carvalho, psicóloga dedicada', $html);
+        self::assertStringContainsString('Áreas de cuidado no atendimento psicológico', $html);
         self::assertStringContainsString('Desenvolvido por <a href="https://natalcode.com.br/" target="_blank" rel="noopener noreferrer">NatalCode</a> - Soluções Digitais', $html);
         self::assertStringNotContainsString('id="copyModeToggle"', $html);
         self::assertStringNotContainsString('id="paletteFabToggle"', $html);

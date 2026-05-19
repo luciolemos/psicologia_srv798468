@@ -33,7 +33,7 @@ final class LandingContentValidatorScriptTest extends TestCase
         exec($command, $output, $exitCode);
 
         self::assertSame(0, $exitCode, implode("\n", $output));
-        self::assertStringContainsString('typography.profile=warm', implode("\n", $output));
+        self::assertStringContainsString('typography.profile=clinical', implode("\n", $output));
         self::assertStringContainsString('failures: 0', implode("\n", $output));
     }
 

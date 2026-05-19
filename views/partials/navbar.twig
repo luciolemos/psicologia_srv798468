@@ -1,19 +1,33 @@
 {% set nav_content = landing_content.nav|default({}) %}
 {% set app_logo = landing_content.seo.schema.logo|default('assets/img/clinic-mark.svg') %}
+{% set app_logo_dark = landing_content.seo.schema.logo_dark|default(app_logo) %}
+{% set app_logo_light = landing_content.seo.schema.logo_light|default(app_logo) %}
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 nav-glass">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center gap-2" href="{{ base_url ?? '/' }}">
-      <img
-        src="{{ base_url ?? '' }}/{{ app_logo }}"
-        alt="{{ app_name ?? 'Landing de saúde' }}"
-        class="navbar-logo"
-        width="38"
-        height="38"
-        loading="eager"
-        decoding="async"
-        fetchpriority="low"
-      >
+    <a class="navbar-brand d-flex align-items-center gap-1" href="{{ base_url ?? '/' }}">
+      <span class="navbar-logo-wrap" aria-hidden="true">
+        <img
+          src="{{ base_url ?? '' }}/{{ app_logo_dark }}"
+          alt=""
+          class="navbar-logo navbar-logo-dark"
+          width="256"
+          height="256"
+          loading="eager"
+          decoding="async"
+          fetchpriority="low"
+        >
+        <img
+          src="{{ base_url ?? '' }}/{{ app_logo_light }}"
+          alt=""
+          class="navbar-logo navbar-logo-light"
+          width="256"
+          height="256"
+          loading="eager"
+          decoding="async"
+          fetchpriority="low"
+        >
+      </span>
       <span class="fw-semibold">{{ app_name ?? 'Landing de saúde' }}</span>
 
       <span class="badge rounded-pill text-bg-primary-subtle border border-primary-subtle ms-2 d-none d-sm-inline">
