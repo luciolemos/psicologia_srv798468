@@ -184,11 +184,17 @@ final class ContactMailer implements MailerInterface
   <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="max-width:680px;margin:0 auto;background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden;">
     <tr>
       <td style="padding:16px;background:#ffffff;color:#111827;border-bottom:1px solid #e5e7eb;">
-        <div style="margin-bottom:10px;">
-          <img src="{$safeLogoUrl}" alt="{$safeBrandName}" style="width:64px;height:64px;object-fit:contain;display:block;">
-        </div>
-        <div style="font-size:20px;line-height:1.3;font-weight:800;">{$safeBrandName}</div>
-        <div style="font-size:18px;line-height:1.3;font-weight:700;margin-top:8px;">Nova solicitação de agendamento</div>
+        <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="border-collapse:collapse;">
+          <tr>
+            <td style="width:72px;vertical-align:middle;">
+              <img src="{$safeLogoUrl}" alt="{$safeBrandName}" style="width:56px;height:56px;object-fit:contain;display:block;">
+            </td>
+            <td style="vertical-align:middle;">
+              <div style="font-size:20px;line-height:1.3;font-weight:800;">{$safeBrandName}</div>
+            </td>
+          </tr>
+        </table>
+        <div style="font-size:18px;line-height:1.3;font-weight:700;margin-top:10px;">Nova solicitação de agendamento</div>
         <div style="font-size:13px;color:#4b5563;margin-top:4px;">Contato recebido pelo site da clínica</div>
       </td>
     </tr>
