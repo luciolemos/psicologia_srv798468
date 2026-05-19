@@ -238,9 +238,9 @@ return [
     'footer' => [
         'title' => 'Jersika Carvalho',
         'label' => 'Psicóloga • CRP 17/1671',
-        // 'address' => 'Instagram: @jersikacarvalho.psi • +55 71 8400-5128 • jersikacarvalho.psi@gmail.com',
+        'address' => '',
         'meta' => 'Atendimento psicológico para mulheres • Psicologia Corporal • Especialização em Família • Psicologia Analítica (em formação) • Terapeuta de Mulheres (em formação)',
-        'emergency_note' => 'Atendimento eletivo. Em caso de crise aguda, risco imediato ou urgência em saúde mental, procure atendimento emergencial presencial.',
+        'emergency_note' => 'Em caso de crise aguda, risco imediato ou urgência em saúde mental, procure atendimento emergencial presencial.',
         'credit' => 'Desenvolvido por <a href="https://natalcode.com.br/" target="_blank" rel="noopener noreferrer">NatalCode</a> - Soluções Digitais',
     ],
     'floating_whatsapp' => [

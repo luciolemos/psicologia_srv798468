@@ -16,7 +16,10 @@
         </div>
 
         <div class="footer-meta small">
-          {{ company_address ?? footer_content.address|default('Atendimento presencial com horário agendado') }}<br>
+          {% set resolved_address = company_address ?? footer_content.address ?? '' %}
+          {% if resolved_address is not empty %}
+            {{ resolved_address }}<br>
+          {% endif %}
           {{ company_meta ?? footer_content.meta|default('Consultas, check-ups e acompanhamento clínico') }}
         </div>
       </div>
