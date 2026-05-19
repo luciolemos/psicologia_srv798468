@@ -74,18 +74,18 @@ return [
             ],
         ],
         'image' => [
-            'src' => 'assets/img/hero/psicologia-640.webp',
+            'src' => 'assets/img/hero/jersika_carvalho-desktop-640.webp',
             'sources' => [
-                ['path' => 'assets/img/hero/psicologia-640.webp', 'width' => 640],
-                ['path' => 'assets/img/hero/psicologia-960.webp', 'width' => 960],
-                ['path' => 'assets/img/hero/psicologia-1896.webp', 'width' => 1896],
+                ['path' => 'assets/img/hero/jersika_carvalho-desktop-640.webp', 'width' => 640],
+                ['path' => 'assets/img/hero/jersika_carvalho-desktop-960.webp', 'width' => 960],
+                ['path' => 'assets/img/hero/jersika_carvalho-desktop-1086.webp', 'width' => 1086],
             ],
             'sizes' => '(max-width: 768px) 92vw, (max-width: 1200px) 44vw, 840px',
             'desktop_media' => '(min-width: 577px)',
             'mobile' => [
-                'src' => 'assets/img/hero/psicologia-mobile-640.webp',
+                'src' => 'assets/img/hero/jersika_carvalho-mobile-640.webp',
                 'sources' => [
-                    ['path' => 'assets/img/hero/psicologia-mobile-640.webp', 'width' => 640],
+                    ['path' => 'assets/img/hero/jersika_carvalho-mobile-640.webp', 'width' => 640],
                 ],
                 'sizes' => '92vw',
                 'media' => '(max-width: 576px)',
@@ -94,7 +94,7 @@ return [
             ],
             'alt' => 'Médica em consulta com paciente no consultório',
             'width' => 640,
-            'height' => 360,
+            'height' => 853,
         ],
         'metrics' => [
             ['kpi' => 'Seg-Sex', 'label' => 'Agenda clínica'],
